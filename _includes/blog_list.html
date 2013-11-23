@@ -1,12 +1,12 @@
 <section class="post">
 	<h1><a href="{{site.url}}{{post.url}}">{{post.title}}</a></h1>
 	<div class="meta">
-		by <a href="#" class="author">{{post.author}}</a> on <a href="#" class="date">{{post.date | date_to_string}}</a> under <a href="#" class="category">{{post.category}}</a>
+		by <a href="#" class="author">{{post.author}}</a> on <a href="#" class="date">{{post.date | date_to_string}}</a> under {% for category in post.categories %}{% if forloop.index > 1 %}, {% endif %}<a href="{{site.url}}/categories/{{category | replace: ' ', '-'}}" class="category">{{category}}</a>{% endfor %}
 	</div>
-	<div class="article">
+	<article>
 		{{content}}
-	</div>
+	</article>
 	<div class="meta-footer">
-		Tags: <a href="#">Funny</a>, <a href="#">Life</a>
+		{% if post.tags[0] != null %}Tags: {% for tag in post.tags %}{% if forloop.index > 1 %}, {% endif %}<a href="{{site.url}}/tags/{{tag | replace: ' ', '-'}}" class="category">{{tag}}</a>{% endfor %}{% endif %}
 	</div>
 </section>

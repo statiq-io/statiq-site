@@ -6,6 +6,7 @@ author: Joshua Howland
 type: Link
 link: http://sealedabstract.com/rants/why-mobile-web-apps-are-slow/
 categories: Development Native Web
+tags: Web
 slug: a-detailed-rant-why-mobile-web-apps-are-slow
 ---
 

@@ -64,20 +64,20 @@ header ul li a:hover { color:#7309b0; }
 }
 .post h1 {
 	font-size: 18px;
-}
-.post h1 {
-	font-size: 18px;
 	background-color: #56EF9D;
 	color: #FFF;
 	padding: 0 10px;
 	margin-bottom: 20px;
 	text-align: center;
 }
+.post h1 a {
+	color: #FFF;
+}
 .post .meta {
 	text-align: center;
 }
-.post .article {
-	margin: 0 20px;
+.post article {
+	margin: 0 20px 40px;
 }
 .meta-footer {
 	background: #F0EEEE;
