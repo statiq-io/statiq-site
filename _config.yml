@@ -5,3 +5,4 @@ pygments: true
 permalink: /:year/:month/:day/:title/
 paginate: 5
 url: file:///Users/aharris88/Documents/statiq/_site
+email: zarin@builtbyhq.com
