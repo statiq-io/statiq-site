@@ -1,0 +1,13 @@
+---
+layout: home_section
+title: Static Blogging
+class: hero
+image: 
+---
+
+
+# STATIC BLOGGING
+## Ridiculous high speeds. Never crashes.
+
+<a href="register.html" class="get-started-btn">Get Started</a>
+<img src="img/arrow.png" class="arrow" />

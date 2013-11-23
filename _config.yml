@@ -1,6 +1,7 @@
 name: Statiq
-description: Static Blogging
+description: Static blogging made easy
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:day/:title/
 paginate: 5
+url: file:///Users/aharris88/Documents/statiq/_site
