@@ -1,7 +1,7 @@
 <section class="post">
-	<h1>{{post.title}}</h1>
+	<h1><a href="{{site.url}}{{post.url}}">{{post.title}}</a></h1>
 	<div class="meta">
-		by <a href="#" class="author">Zarin Ficklin</a> on <a href="#" class="date">November 20nd, 2013</a> under <a href="#" class="category">Tech</a>
+		by <a href="#" class="author">{{post.author}}</a> on <a href="#" class="date">{{post.date | date_to_string}}</a> under <a href="#" class="category">{{post.category}}</a>
 	</div>
 	<div class="article">
 		{{content}}
