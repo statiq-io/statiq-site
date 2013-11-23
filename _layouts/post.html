@@ -5,12 +5,12 @@ layout: default
 <section class="post">
 	<h1>{{page.title}}</h1>
 	<div class="meta">
-		by <a href="#" class="author">{{page.author}}</a> on <a href="#" class="date">{{page.date | date_to_string}}</a> under {% for category in page.categories %}{% if forloop.index > 1 %}, {% endif %}<a href="{{site.url}}/categories/{{category | replace: ' ', '-'}}" class="category">{{category}}</a>{% endfor %}
+		by {{page.author}} on {{page.date | date_to_string}}
 	</div>
 	<article>
 		{{content}}
 	</article>
 	<div class="meta-footer">
-		{% if page.tags[0] != null %}Tags: {% for tag in page.tags %}{% if forloop.index > 1 %}, {% endif %}<a href="{{site.url}}/tags/{{tag | replace: ' ', '-'}}" class="category">{{tag}}</a>{% endfor %}{% endif %}
+		{% if page.categories[0] != null %}Categories: {% for category in page.categories %}{% if forloop.index > 1 %}, {% endif %}<a href="{{site.url}}/categories/{{category | replace: ' ', '-'}}" class="category">{{category}}</a>{% endfor %}{% endif %}
 	</div>
 </section>
