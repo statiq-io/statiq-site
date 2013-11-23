@@ -51,6 +51,45 @@ header ul li a:hover { color:#7309b0; }
 .call-to-action { padding:50px 0; background:white; }
 
 
+/************************************************************\
+						BLOG PAGE
+\************************************************************/
+.post {
+	margin: 50px auto;
+	width: 100%;
+	max-width: 700px;
+	color: #545966;
+	background: #FFF;
+	border: 1px solid #EEE;
+}
+.post h1 {
+	font-size: 18px;
+}
+.post h1 {
+	font-size: 18px;
+	background-color: #56EF9D;
+	color: #FFF;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.post .meta {
+	text-align: center;
+}
+.post .article {
+	margin: 0 20px;
+}
+.meta-footer {
+	background: #F0EEEE;
+	padding: 20px;
+	font-size: 15px;
+}
+a.author,
+a.date,
+a.category,
+.meta-footer a {
+	color: #8E598E;
+}
 
 
 /************************************************************\

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+	{% if post.layout == "post"%}
+		{% assign post = post %}
+		{% assign content = post.content %}
+		{% include blog_list.html %}
+	{% endif %}
+{% endfor %}
